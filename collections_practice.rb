@@ -42,11 +42,7 @@ def merge_data(keys,data)
 end
 
 def find_cool(array)
-  cool_hashes = []
-  array.each do |hash|
-    hash.each {|k, v| cool_hashes << hash if k == :temparature && v == "cool"}
-  end
-  return cool_hashes
+cool.select {|i| i.any? {|k,v| v == "cool"}}
 end
 
 def organize_schools(hash)
