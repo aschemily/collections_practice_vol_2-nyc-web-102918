@@ -46,7 +46,7 @@ def find_cool(array)
   array.each do |hash|
     hash.each {|k, v| cool_hashes << hash if k == :temparature && v == "cool"}
   end
-  cool_hashes
+  return cool_hashes
 end
 
 def organize_schools(hash)
