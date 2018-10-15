@@ -24,7 +24,7 @@ def count_elements(array)
   array.each {|element| counts[element] += 1 }
   returnarr= []
   counts.each do |element,num|
-    element.each {|key, val| return_arr << {key => val, :count => num}}
+    element.each {|key, val| returnarr << {key => val, :count => num}}
   end
   returnarr
 end
