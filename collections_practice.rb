@@ -26,3 +26,15 @@ def count_elements(array)
   end
   returnarr
 end
+
+def merge_data(keys,data)
+  merged_hashes = []
+  data.each do |hash|
+    hash.each do |name, info|
+      keys.each do |key_val|
+        merged_hashes << key_val.merge(info) if key_val.values[0] == name 
+      end
+    end
+  end
+  merged_hashes
+end
