@@ -42,7 +42,7 @@ def merge_data(keys,data)
 end
 
 def find_cool(array)
-cool.select {|i| i.any? {|k,v| v == "cool"}}
+array.select {|i| i.any? {|k,v| v == "cool"}}
 end
 
 def organize_schools(hash)
