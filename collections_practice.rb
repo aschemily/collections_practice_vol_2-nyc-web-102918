@@ -38,3 +38,11 @@ def merge_data(keys,data)
   end
   merged_hashes
 end
+
+def find_cool(array)
+  cool_hashes = []
+  array.each do |hash|
+    hash.each {|k, v| cool_hashes << hash if k == :temparature && v == "cool"}
+  end
+  cool_hashes
+end
